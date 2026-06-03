@@ -35,6 +35,21 @@ export const checkoutRoutes = async (app: FastifyInstance) => {
               status: { type: "string" },
             },
           },
+          400: {
+            description: "Dados inválidos",
+            type: "object",
+            properties: {
+              error: { type: "string" },
+              details: { type: "object", additionalProperties: true },
+            },
+          },
+          422: {
+            description: "Erro de negócio (ex: estoque insuficiente)",
+            type: "object",
+            properties: {
+              error: { type: "string" },
+            },
+          },
         },
       },
     },
