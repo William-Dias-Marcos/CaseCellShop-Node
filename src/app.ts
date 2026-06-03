@@ -36,7 +36,7 @@ export const buildApp = () => {
   // Hook para iniciar o trace (Span) na requisição HTTP
   app.addHook("onRequest", (request, reply, done) => {
     const span = tracer.startSpan(
-      `HTTP ${request.method} ${request.routerPath || request.url}`,
+      `HTTP ${request.method} ${request.routeOptions?.url || request.url}`,
     );
     span.setAttribute("http.method", request.method);
     span.setAttribute("http.url", request.url);
