@@ -1,0 +1,25 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependências
+node_modules/
+
+# Build (TypeScript)
+dist/
+
+# Variáveis de ambiente
+.env
+.env.test
+.env.production
+# Nota: .env.example não deve ser ignorado para servir de template
+
+# OS / Editor
+.DS_Store
+.vscode/
+
+# Testes / Coverage
+coverage/
