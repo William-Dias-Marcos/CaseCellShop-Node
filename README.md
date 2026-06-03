@@ -1,5 +1,7 @@
 # CaseCellShop - Plataforma Backend
 
+[![CI Pipeline](https://github.com/William-Dias-Marcos/CaseCellShop-Node/actions/workflows/ci.yml/badge.svg)](https://github.com/William-Dias-Marcos/CaseCellShop-Node/actions/workflows/ci.yml)
+
 Este projeto implementa uma mini plataforma backend para a CaseCellShop, desenvolvida como teste técnico para demonstrar proficiência em Node.js, TypeScript e arquitetura de software. O foco é a implementação de conceitos cruciais como design de APIs REST, sistema de cache, concorrência, idempotência e observabilidade profunda.
 
 ---
